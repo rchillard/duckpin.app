@@ -3,4 +3,4 @@ Web application for more efficient, systematic tracking of to do items.  This ap
 - Urgency
 - Importance
 
-You can read more about the (Eisenhower Matrix)[https://www.eisenhower.me/eisenhower-matrix/] or use the app to learn how it works.
+You can read more about the [Eisenhower Matrix](https://www.eisenhower.me/eisenhower-matrix/) or use the app to learn how it works.
