@@ -11,7 +11,7 @@ Prerequisites for development:
 - Docker 17.05+
 - Docker-Compose 1.24+
 
-# Development
+## Development
 This setup should work for most Linux variants, but has been primarily tested on Ubuntu:
 1. Clone the repository locally.
 ```
@@ -25,9 +25,10 @@ docker-compose -v
 docker-compose version 1.24.0-rc1, build 0f3d4dda
 ```
 3. If no result for Docker, then you must [install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
-3. You will also need to [install Docker Compose](https://github.com/docker/compose/releases) as well.
+3. You will need to [install Docker Compose](https://github.com/docker/compose/releases) as well.
 4. Run the following command to initialize a local set of services:
 ```
 docker-compose up
 ```
-5. You will see output in your terminal documenting the result, but you can also test using 'docker ps'.
+
+You will see output in your terminal documenting the result, but you can also test using 'docker ps'.
