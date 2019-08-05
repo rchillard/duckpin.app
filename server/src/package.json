@@ -1,0 +1,25 @@
+{
+  "name": "generalorder.app",
+  "version": "1.0.0",
+  "description": "Task management application inspired by Dwight D. Eisenhower",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchillard/generalorder.app.git"
+  },
+  "author": "rchillard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchillard/generalorder.app/issues"
+  },
+  "homepage": "https://github.com/rchillard/generalorder.app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.8"
+  }
+}
