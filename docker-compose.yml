@@ -35,10 +35,22 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
 
-  api:
-    build: ./api
+  server:
+    build: ./server
     restart: always
     ports:
-      - 5001:3000
+      - 5001:5000
     links:
       - mongo
+  
+  client:
+    build: ./client
+    restart: always
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    environment:
+      - NODE_ENV=development
+    
