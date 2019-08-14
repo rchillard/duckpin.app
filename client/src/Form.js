@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Form.css";
 
 class Form extends Component {
   // Prevent default and handle submit needed here

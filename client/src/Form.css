@@ -1,0 +1,14 @@
+form {
+  background-color: lightpink;
+  bottom: 1rem;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  position: absolute;
+}
+
+input[type="button"] {
+  font-size: 1rem;
+  margin-left: 1rem;
+  padding: .5rem 1rem .5rem 1rem;
+}
