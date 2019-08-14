@@ -5,7 +5,7 @@ class Item extends Component {
   // Need to add delete onChange event handling
   // Styling to cross off 'To Do' item and slowly fade
 
-  render(props) {
+  render() {
     const { key, item, removeItem } = this.props;
 
     return (

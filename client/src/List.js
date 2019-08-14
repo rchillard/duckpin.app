@@ -8,8 +8,8 @@ class List extends Component {
   // URGENT + NOT IMPORTANT
   // NOT URGENT + NOT IMPORTANT
 
-  render(props) {
-    const { type, itemData, removeItem } = this.props;
+  render() {
+    const { type, advice, itemData, removeItem } = this.props;
     const rows = itemData.map((row, index) => {
       return <Item key={index} item={row} removeItem={removeItem} />;
     });
@@ -17,7 +17,7 @@ class List extends Component {
     return (
       <div>
         <h2>{type}</h2>
-        <p>Tagline here</p>
+        <p>{advice}</p>
         <ul>{rows}</ul>
       </div>
     );
