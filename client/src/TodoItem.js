@@ -9,7 +9,7 @@ class TodoItem extends Component {
     return (
       <form>
         <label>
-          <input type="checkbox" /> To Do Item
+          <input type="checkbox" /> {this.props.data}
         </label>
         <input type="submit" value="Delete" />
       </form>
