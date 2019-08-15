@@ -1,0 +1,59 @@
+[
+  {
+    "customerID": 1,
+    "priority": [
+      "Walk the dog and cat and horse",
+      "Mow the lawn",
+      "Milk the cows"
+    ],
+    "focus": [
+      "Plan for retirement",
+      "Open new bank account",
+      "Marry dream person"
+    ],
+    "delegate": [
+      "Take out the trash",
+      "Fill out tax forms",
+      "Research dog kennels"
+    ],
+    "ignore": ["Answer telemarketers", "Do crossword puzzles"]
+  },
+  {
+    "customerID": 2,
+    "priority": [
+      "Prance with ponies",
+      "Feed the venus flytrap",
+      "Talk to goats"
+    ],
+    "focus": [
+      "Plan for retirement",
+      "Open new bank account",
+      "Marry dream person"
+    ],
+    "delegate": [
+      "Take out the trash",
+      "Fill out tax forms",
+      "Research dog kennels"
+    ],
+    "ignore": ["Answer telemarketers", "Do crossword puzzles"]
+  },
+  {
+    "customerID": 3,
+    "priority": [
+      "Fly the pegasus into clouds",
+      "Feed the unicorn",
+      "Milk the dragon"
+    ],
+    "focus": [
+      "Plan for retirement",
+      "Open new bank account",
+      "Marry dream person"
+    ],
+    "delegate": [
+      "Take out the trash",
+      "Fill out tax forms",
+      "Research dog kennels"
+    ],
+    "ignore": ["Answer telemarketers", "Do crossword puzzles"]
+  }
+]
