@@ -8,7 +8,7 @@ AWS.config.update({
 var docClient = new AWS.DynamoDB.DocumentClient();
 
 var table = "Todos3";
-var customerID = 2;
+var customerID = 4;
 
 var params = {
   TableName: table,
