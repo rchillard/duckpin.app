@@ -48,8 +48,9 @@ class App extends Component {
         {/* Add four to do lists for each section */}
         <q>
           What is important is seldom urgent and what is urgent is seldom
-          important.<cite>-Dwight D. Eisenhower</cite>
+          important.
         </q>
+        <cite>-Dwight D. Eisenhower</cite>
         <List
           type={"Priority"}
           advice={

@@ -65,7 +65,7 @@ class Form extends Component {
           />
           Important
         </label>
-        <input type="button" value="Submit" onClick={this.submitForm} />
+        <input type="button" value="Submit" onClick={this.props.handleSubmit} />
       </form>
     );
   }
