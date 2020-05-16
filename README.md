@@ -5,13 +5,25 @@ Web application for more efficient, systematic tracking of to do items.  This ap
 
 You can read more about the [Eisenhower Matrix](https://jamesclear.com/eisenhower-box) or use the app to learn how it works.
 
-# Setup
+## Exercise
+This application is an exercise in learning different technologies with a practical, real world (yet basic) CRUD app.  
+
+Frontend technology in the client folder:
+- React
+- Svelte
+- Vue
+
+Multiple cloud infrastructure providers:
+- Amazon Web Services
+- Cloudflare Workers
+
+## Setup
 Prerequisites for development:
 - Ubuntu 16.04+ (most Linux variants should work)
 - Docker 17.05+
 - Docker-Compose 1.24+
 
-## Development
+### Development
 This setup should work for most Linux variants, but has been primarily tested on Ubuntu:
 1. Clone the repository locally.
 ```
