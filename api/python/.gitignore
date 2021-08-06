@@ -1,6 +1,7 @@
 # Chalice specific
 chalice-env/
 .chalice/deployments/
+.chalice/deployed
 .chalice/venv/
 
 # Byte-compiled / optimized / DLL files
