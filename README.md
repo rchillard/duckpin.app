@@ -8,19 +8,18 @@ You can read more about the [Eisenhower Matrix](https://jamesclear.com/eisenhowe
 ## Exercise
 This application is an exercise in learning different technologies with a practical, real world (yet basic) CRUD app.  
 
-Frontend technology in the clients folder:
-- [] React
-- [] Svelte
-- [] Vanilla
-- [] Vue
+Frontends in the clients folder:
+- [ ] JavaScript
+- [ ] Svelte
+- [ ] Vue
 
-Backends in the API folder:
-- [] Python 
-- [] NodeJS
+Backends in the api folder:
+- [x] Python 
+- [ ] NodeJS
 
-Multiple cloud infrastructure providers:
-- [] Amazon Web Services
-- [] Cloudflare Workers
+Deployments in the infrastructure folder:
+- [ ] Amazon Web Services
+- [ ] Cloudflare Workers
 
 ## Setup
 Prerequisites for development
