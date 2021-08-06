@@ -1,5 +1,5 @@
 # Data
-The data store is [Amazon DynamoDB](https://aws.amazon.com/dynamodb/).  This document database requires a lot of upfront thought to consider data access patterns.  Data access patterns deeply inform how you model your data.  
+The data store is [Amazon DynamoDB](https://aws.amazon.com/dynamodb/).  This document database requires upfront thought to consider data access patterns.
 
 ## Entity Relationship Diagram
 ![entity relationship diagram](docs/duckpin-erd.png)
@@ -13,7 +13,7 @@ The table below captures the ways our application will access our data:
 | Get single task                             | primary   | taskid     | transaction |
 | Update single task                          | primary   | taskid     | transaction |
 | Delete task                                 | primary   | taskid     | transaction |
-| Get all tasks                               | primary   | userid     | transaction |
+| Get all tasks                               | primary   | userid     | listview    |
 | Get important, urgent tasks                 | secondary | userid     | quadrant 1  |
 | Get important, non-urgent tasks             | secondary | userid     | quadrant 2  |
 | Get urgent, unimportant tasks               | secondary | userid     | quadrant 3  |
@@ -22,10 +22,10 @@ The table below captures the ways our application will access our data:
 | Delete non-urgent, unimportant tasks (time) | secondary | userid     | quadrant 4  |
 
 ## Entity Chart
-| Entity | PartitionyKey | SortKey             |
-| ------ | ------------- | ------------------- |
-| Users  | userid        | userid              |
-| Tasks  | userid        | taskid#created date |
+| Entity | PartitionyKey | SortKey | GSI 1     | GSI 2  |
+| ------ | ------------- | ------- | --------- | ------ |
+| Users  | userid        | userid  | n/a       | n/a    |
+| Tasks  | userid        | taskid  | important | urgent |
 
 ## Object Schema
 Each task has the following schema in Python:
