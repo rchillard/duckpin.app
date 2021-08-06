@@ -19,3 +19,10 @@ source chalice-env/bin/activate
 ```bash
 pip install chalice
 ```
+
+## Testing
+All tests assume you have [httpie](https://httpie.io/) installed.  Try the basic API url with:
+
+```bash
+http $(chalice url)
+```
