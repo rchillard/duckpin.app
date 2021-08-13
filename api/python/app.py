@@ -13,6 +13,18 @@ def get_app_db():
     return _DB
 
 
+@app.route('/')
+def get_root():
+    return {'all tasks': '/tasks',
+            'single task': '/tasks/id',
+            'introspect': '/introspect'}
+
+
+@app.route('/introspect')
+def introspect():
+    return app.current_request.to_dict()
+
+
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     return get_app_db().list_items()
@@ -50,8 +62,3 @@ def update_task(uid):
     )
 
 # Diagnotsic routes
-
-
-@app.route('/introspect')
-def introspect():
-    return app.current_request.to_dict()
