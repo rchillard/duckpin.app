@@ -1,5 +1,5 @@
 from chalice import Chalice
-from chalicelib import db
+from chalicelib import auth, db
 
 app = Chalice(app_name='duckpin')
 app.debug = True

@@ -5,6 +5,12 @@ import os
 from urllib import request, parse
 
 ssm_client = boto3.client('ssm')
+# alternative approach?
+# cognito_client = boto3.client('')
+# response = cognito_client.describe_user_pool_client(
+#     UserPoolId='string',
+#     ClientId='string'
+# )
 
 # Helpful resources to understand this code
 # https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-user-pool-oauth-2-0-grants/
